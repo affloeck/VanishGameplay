@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
+    <Files>
+      <File FileName="Assets\Scripts\SmoothFollow.cs" Line="24" Column="64" />
+      <File FileName="Assets\Scripts\PlayerControllerOLD.cs" Line="66" Column="49" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="186" Column="6" />
+      <File FileName="Assets\Scripts\CharacterController2D.cs" Line="459" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="A:\Art\Unity\VanishGamePlay\Assets\Scripts\PlayerController.cs" line="61" column="1" />
+      <Breakpoint file="A:\Art\Unity\VanishGamePlay\Assets\Scripts\PlayerControllerOld.cs" line="96" column="1" />
+      <Breakpoint file="A:\Art\Unity\VanishGamePlay\Assets\Scripts\PlayerController.cs" line="190" column="7" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
