@@ -111,7 +111,7 @@ namespace Prime31 {
 		/// <value>The slope limit.</value>
 		[Range( 0f, 90f )]
 		public float slopeLimit = 30f;
-
+			
 		/// <summary>
 		/// the threshold in the change in vertical movement between frames that constitutes jumping
 		/// </summary>

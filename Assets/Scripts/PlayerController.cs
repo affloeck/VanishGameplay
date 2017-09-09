@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
 
 	//interaction
 	private RaycastHit2D _raycastHit;
-	private float touchRayRange = 1f;
 	public float pullForce = 100f;
 	private bool faded = false;
 	public LayerMask playerMask;
@@ -158,43 +157,24 @@ public class PlayerController : MonoBehaviour
 			print (_raycastHit.collider.name);
 			Vector2 charObjDist = transform.position - _raycastHit.transform.position;
 			if (CrossPlatformInputManager.GetButton ("Fire1") && _raycastHit.collider.tag == "Gameplay") {
-					runSpeed = 2f;
-					//				rb.constraints = RigidbodyConstraints.FreezeRotation;
-					//				gameplayObjectHit.rigidbody.isKinematic = true;
+				runSpeed = 2f;
 				_raycastHit.transform.parent = transform;
 				_raycastHit.transform.localRotation = Quaternion.identity;
 			}
-	
-		
-
-			
-				if (CrossPlatformInputManager.GetButtonDown ("Fire3") && !faded) {
-					print ("making solid object faded");
-					//_controller._raycastHitGameplay.transform.GetComponent<Rigidbody2D>().isKinematic = true;
-				if (_raycastHit.transform.GetComponent<Rigidbody2D> ()) {
-					_raycastHit.transform.GetComponent<Rigidbody2D> ().gravityScale = 0f;
-				}
-				_raycastHit.transform.GetComponent<Collider2D> ().enabled = false;
+				
+			if (CrossPlatformInputManager.GetButtonDown ("Fire3") && !faded) {
 				_raycastHit.transform.GetComponent<Renderer> ().material.color = Color.green;
-					faded = true;
-				}
-				else if (CrossPlatformInputManager.GetButtonDown ("Fire3") && faded) {
-						print ("making faded object solid");
-							//gameplayObjectHit.transform.GetComponent<Rigidbody2D>().isKinematic = false;
-				if (_raycastHit.transform.GetComponent<Rigidbody2D> ()) {
-					_raycastHit.transform.GetComponent<Rigidbody2D> ().isKinematic = false;
-				}
-				_raycastHit.transform.GetComponent<Collider2D> ().enabled = true;
+				faded = true;
+			}
+			else if (CrossPlatformInputManager.GetButtonDown ("Fire3") && faded) {
 				_raycastHit.transform.GetComponent<Renderer> ().material.color = Color.red;
-							faded = false;
+				faded = false;
 
 				}
 			else if (!CrossPlatformInputManager.GetButton ("Fire1")){
-					print ("fire up");
 				_raycastHit.transform.parent = null;
 					//_controller._raycastHitGameplay.transform.GetComponent<ReParenter> ().ReParent ();
-
-					runSpeed = 8f;
+				runSpeed = 8f;
 					//				rb.constraints &= ~RigidbodyConstraints.FreezeRotationY;
 				}
 				}

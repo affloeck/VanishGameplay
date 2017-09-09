@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanishGamePlay", "Assembly-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanishGamePlay", "Assembly-CSharp-Editor-firstpass.csproj", "{AF7866E1-B7CA-AD6D-3863-F642C3950A59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanishGamePlay", "Assembly-CSharp-Editor.csproj", "{8D6A8B49-93A5-B430-EB0B-F3E18BB82D99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{AF7866E1-B7CA-AD6D-3863-F642C3950A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7866E1-B7CA-AD6D-3863-F642C3950A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7866E1-B7CA-AD6D-3863-F642C3950A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6A8B49-93A5-B430-EB0B-F3E18BB82D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6A8B49-93A5-B430-EB0B-F3E18BB82D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6A8B49-93A5-B430-EB0B-F3E18BB82D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6A8B49-93A5-B430-EB0B-F3E18BB82D99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
